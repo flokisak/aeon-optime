@@ -1,7 +1,7 @@
 // Supabase configuration
-// Replace these with your actual Supabase project credentials
-const SUPABASE_URL = 'https://sgrvxuepflnxhhwxkqkz.supabase.co';
-const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNncnZ4dWVwZmxueGhod3hrcWt6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjUzNjgyMzYsImV4cCI6MjA4MDk0NDIzNn0.lHmwYOaBXU3lwRZrLbhvbPVDC0nZUT4nJpzSUnwQchg';
+// Environment variables for Vercel deployment
+const SUPABASE_URL = window.ENV?.SUPABASE_URL || 'https://sgrvxuepflnxhhwxkqkz.supabase.co';
+const SUPABASE_ANON_KEY = window.ENV?.SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNncnZ4dWVwZmxueGhod3hrcWt6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjUzNjgyMzYsImV4cCI6MjA4MDk0NDIzNn0.lHmwYOaBXU3lwRZrLbhvbPVDC0nZUT4nJpzSUnwQchg';
 
 // Initialize Supabase immediately
 if (typeof window !== 'undefined') {

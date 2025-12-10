@@ -7,7 +7,7 @@
     "start": "python -m http.server 8000",
     "serve": "npx http-server -p 8000 -c-1",
     "dev": "npx live-server --port=8000 --open=index.html",
-    "build": "echo 'Build complete - static files ready'",
+    "build": "node build.js",
     "preview": "npx http-server -p 8000 -c-1",
     "setup-db": "echo 'Run the SQL in supabase-schema.sql in your Supabase SQL Editor'"
   },
